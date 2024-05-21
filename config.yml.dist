@@ -1,0 +1,6 @@
+elasticsearch:
+  migrations_index_name: migrations  # Optional
+  host: http://127.0.0.1:9217
+  tls:  # Optional
+    cert_file:
+    key_file:
