@@ -6,7 +6,7 @@ A utility that manages structural changes to your Elasticsearch.
 It applies migrations in correct order to indexes.
 
 ## Configuration
-The application by default looks for the configuration file in the same directory
+The application by default looks for the configuration file `config.yml` in the same directory
 where its binary file is located. But you can specify an arbitrary
 path using the `--config` parameter.
 ### Configuration file structure
