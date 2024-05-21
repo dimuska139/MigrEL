@@ -82,7 +82,7 @@ func upCreateIndexAccounts(ctx context.Context, _ *sql.Tx) error {
 	return nil
 }
 
-func downCreateIndexAccounts(_ context.Context, _ *sql.Tx) error {
+func downCreateIndexAccounts(ctx context.Context, _ *sql.Tx) error {
 	_, err := elasticsearch.Client.Indices.Delete("accounts").
 		Do(ctx)
 	if err != nil {
